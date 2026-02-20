@@ -468,6 +468,13 @@ input:focus, textarea:focus{border-color: rgba(37,99,235,.55); box-shadow: 0 0 0
   opacity: .70;
 }
 
+.footerBrand__credit{
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: .65;
+  letter-spacing: .06em;
+}
+
 @media (max-width: 520px){
   .footerBrand__links{gap: 18px;}
   .footerBrand__kanji{font-size: 46px;}
