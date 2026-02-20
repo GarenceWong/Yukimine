@@ -46,3 +46,15 @@ The visual style blends:
   - Noto Serif JP
 
 No frameworks. No bundlers. No dependencies.
+
+---
+
+## Copyright & Attribution
+
+© 2026 Garence Wong. All rights reserved.
+
+This website and its visual design were created by Garence Wong.
+
+The source code may be used under the MIT License.
+The brand name, visual design, layout, images, and overall presentation
+are **not licensed for reuse** without explicit permission.
