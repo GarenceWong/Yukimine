@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>雪峰 Yukimine Sake</title>
+  <meta name="description" content="Yukimine — Premium Japanese sake. Mountain's blessing, water's purity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Background particles layer -->
+  <div class="particles" aria-hidden="true"></div>
+
+  <!-- Sticky Navigation -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="Yukimine">
+        <span class="brand__mark">雪峰</span>
+        <span class="brand__name">YUKIMINE</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#collection">COLLECTION</a>
+        <a href="#heritage">HERITAGE</a>
+        <a href="#brewing">BREWING</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+
+      <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="nav__toggleLine"></span>
+        <span class="nav__toggleLine"></span>
+        <span class="nav__toggleLine"></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" id="mobileMenu" hidden>
+      <a href="#collection">COLLECTION</a>
+      <a href="#heritage">HERITAGE</a>
+      <a href="#brewing">BREWING</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" aria-label="Hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="blob blob--a"></div>
+        <div class="blob blob--b"></div>
+        <div class="gridlines"></div>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__logo" aria-hidden="true">
+          <div class="spinY">
+            <h1 class="hero__kanji">雪峰</h1>
+          </div>
+        </div>
+
+        <h2 class="hero__title reveal">YUKIMINE</h2>
+        <div class="divider reveal" style="--delay: 120ms"></div>
+        <p class="hero__subtitle reveal" style="--delay: 220ms">Premium Japanese Sake</p>
+        <p class="hero__tagline reveal" style="--delay: 320ms">山の恵み、水の純粋 — Mountain's Blessing, Water's Purity</p>
+
+        <div class="hero__cta reveal" style="--delay: 420ms">
+          <a class="btn btn--primary" href="#collection">EXPLORE COLLECTION</a>
+          <a class="btn btn--ghost" href="#brewing">OUR PROCESS</a>
+        </div>
+
+        <a class="scrollHint" href="#collection" aria-label="Scroll to collection">
+          <span class="scrollHint__dot"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Rotating 3D Logo -->
+    <section class="section" aria-label="Rotating logo">
+      <div class="container">
+        <div class="section__center reveal">
+          <h2 class="section__kicker">SIGNATURE</h2>
+        </div>
+
+        <div class="cubeWrap reveal" style="--delay: 120ms">
+          <div class="cube" aria-hidden="true">
+            <div class="cube__face cube__front">雪</div>
+            <div class="cube__face cube__back">峰</div>
+            <div class="cube__face cube__left">SAKE</div>
+            <div class="cube__face cube__right">純米</div>
+            <div class="cube__face cube__top">山</div>
+            <div class="cube__face cube__bottom">水</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collection -->
+    <section class="section section--padded" id="collection" aria-label="Collection">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2 class="sectionHead__title">PREMIUM COLLECTION</h2>
+          <div class="divider"></div>
+          <p class="sectionHead__jp">厳選された日本酒</p>
+        </div>
+
+        <div class="productGrid" id="productGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Heritage -->
+    <section class="parallax" id="heritage" aria-label="Heritage">
+      <div class="parallax__bg" data-parallax>
+        <img
+          src="https://images.unsplash.com/photo-1708581189590-5f402a5e4127?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqYXBhbmVzZSUyMG1vdW50YWluJTIwc25vd3xlbnwxfHx8fDE3NzE1ODI4MTh8MA&ixlib=rb-4.1.0&q=80&w=1600"
+          alt="Snowy mountain landscape"
+          loading="lazy"
+        />
+        <div class="parallax__overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="parallax__content">
+        <div class="reveal">
+          <h2 class="parallax__kanji">山の恵み</h2>
+          <p class="parallax__title">MOUNTAIN'S BLESSING</p>
+          <p class="parallax__text">
+            Brewed with pristine mountain spring water from the Japanese Alps, our sake embodies the pure essence of
+            nature's finest ingredients.
+          </p>
+        </div>
+      </div>
+    </section>
+
+   <!-- Brewing Process -->
+    <section class="section section--padded" id="brewing" aria-label="Brewing process">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2 class="sectionHead__jpBig">醸造工程</h2>
+          <p class="sectionHead__sub">BREWING PROCESS</p>
+        </div>
+
+        <div class="processGrid">
+          <article class="processCard reveal" data-tilt>
+            <div class="processCard__icon">米</div>
+            <h3 class="processCard__title">RICE SELECTION</h3>
+            <p class="processCard__text">Premium Yamada Nishiki rice, carefully selected and polished to perfection.</p>
+          </article>
+
+          <article class="processCard reveal" style="--delay:120ms" data-tilt>
+            <div class="processCard__icon">水</div>
+            <h3 class="processCard__title">PURE WATER</h3>
+            <p class="processCard__text">Naturally filtered alpine spring water for exceptional clarity and softness.</p>
+          </article>
+
+          <article class="processCard reveal" style="--delay:240ms" data-tilt>
+            <div class="processCard__icon">麹</div>
+            <h3 class="processCard__title">KOJI CULTURE</h3>
+            <p class="processCard__text">Traditional koji cultivation to unlock aroma, sweetness, and umami.</p>
+          </article>
+        </div>
+
+        <div class="processBannerWrap" aria-label="Brewing process scene">
+          <figure class="processBanner reveal" style="--delay:360ms" data-tilt>
+            <img src="assets/img/Process.png" alt="Yukimine brewing process scene" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--padded" id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="contact reveal">
+          <div>
+            <h2 class="contact__title">Contact</h2>
+            <p class="contact__text">
+              Want to stock Yukimine or collaborate? Drop a message and we'll get back within 1–2 business days.
+            </p>
+            <ul class="contact__meta">
+              <li><span>Location</span><b>Niigata, Japan</b></li>
+              <li><span>Email</span><b>Yukimine@sake.jp</b></li>
+              <li><span>IG</span><b>@yukimine.sake</b></li>
+            </ul>
+          </div>
+
+          <form class="form" id="contactForm">
+            <label>
+              <span>Name</span>
+              <input name="name" type="text" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Drop a message..." required></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">SEND MESSAGE</button>
+            <p class="form__note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footerBrand" aria-label="Footer">
+  <div class="footerBrand__inner">
+    <div class="footerBrand__logo" aria-hidden="true">
+      <div class="footerBrand__kanji">雪峰</div>
+      <div class="footerBrand__name">YUKIMINE</div>
+    </div>
+
+    <div class="footerBrand__divider" aria-hidden="true"></div>
+
+    <p class="footerBrand__tagline">日本酒醸造所 — Premium Japanese Sake Brewery</p>
+
+    <nav class="footerBrand__links" aria-label="Footer links">
+      <a href="#" rel="noopener">INSTAGRAM</a>
+      <a href="#" rel="noopener">FACEBOOK</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+    <p class="footerBrand__copy">
+      © <span id="year"></span> Yukimine Sake Brewery. Est. 1892. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+  </main>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
